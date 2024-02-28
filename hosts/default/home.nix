@@ -42,7 +42,9 @@
   home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
-    mullvad-vpn
+    nerdfonts
+
+    kitty
 
     rustup
 
@@ -50,12 +52,15 @@
     spotify
     libreoffice
     thunderbird
-    openvpn3
-    via
     vscode
-
+    signal-desktop
     teams-for-linux
+    via
     remmina
+    gimp
+
+    openvpn3
+    mullvad-vpn
 
     nextcloud-client
     dropbox
@@ -75,10 +80,6 @@
 
     qFlipper
     ledger-live-desktop
-
-    gimp
-
-    nerdfonts
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -113,6 +114,9 @@
       {
         plugin = onedarker-nvim;
         config = "colorscheme onedarker";
+      }
+      {
+        plugin = nvchad;
       }
     ];
   };
